@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Which game u will play?</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <h1 id="title" class="text-center text-yellow">Choose ur game to play</h1>
+        <p id="description" class="text-center text-yellow">U have to select game which u want to play with me</p>
+    </header>
+    <div class="conteiner">
+    <form id="survey-form">
+        <div class="">
+            <label for="name" class="text-yellow" >Name<input type="text" id="name" required placeholder="Enter your name"></label>
+        </div>
+        <div class="full-form group-box">
+            <label for="email"class="text-yellow">Email <input placeholder="Enter your Email" type="email" id="email" required></label>
+        </div>
+        <div class="full-form group-box">
+            <label for="age"class="text-yellow">Age <input placeholder="Age" type="number" id="number" required min="18" max="50"></label>
+        </div>
+        <div class="full-form">
+            <label for="dropdown"class="text-yellow">Your platform
+                <select id="dropdown" required>
+                    <option placeholder="select"></option>
+                    <option value="PC">PC</option>
+                    <option value="PS">PS</option>
+                    <option value="XBOX">XBOX</option>
+                </select>
+            </label>
+        </div>
+        <div class="full-form">
+            <label for="play-time"class="text-yellow">How much u play in day?
+                <input type="radio" class="in-line" id="play-time" value="2-3 hours" name="play-time"> 2-3 hours
+                <input type="radio" class="in-line" id="play-time" value="4-6 hours" name="play-time"> 4-6 hours
+                <input type="radio" class="in-line" id="play-time" value="6+ hours" name="play-time"> 6+ hours
+            </label>
+        </div>
+        <div class="full-form">
+            <label for="game" class="text-yellow">Which game u wanna to play?<br>
+                <input type="checkbox" class="in-line" id="games" name="nw">New World
+                <input type="checkbox" class="in-line" id="games" name="wow">World of Warcraft
+                <input type="checkbox" class="in-line" id="games" name="la">Lost Ark
+            </label>
+        </div>
+        <div class="full-form">
+            <label for="wish" class="text-yellow">Ur wishes:<br>
+                <textarea id="wish" placeholder="Enter your comment here..."></textarea>
+            </label>
+        </div>
+        <div class="full-form">
+            <label for="submit" >
+                <input id="submit" type="button" value="Submit">
+            </label>
+        </div>
+    </form>
+    </div>
+</body>
+
+</html>
