@@ -4,62 +4,64 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Which game u will play?</title>
     <link rel="stylesheet" href="styles.css">
+    <title>Question Form</title>
 </head>
 
 <body>
     <header>
-        <h1 id="title" class="text-center text-yellow">Choose ur game to play</h1>
-        <p id="description" class="text-center text-yellow">U have to select game which u want to play with me</p>
+        <h1 id="title">Question form about games</h1>
+        <p id="description">Help us to know your favorite game</p>
     </header>
-    <div class="conteiner">
-    <form id="survey-form">
-        <div class="">
-            <label for="name" class="text-yellow" >Name<input type="text" id="name" required placeholder="Enter your name"></label>
+    <form class="content" id="survey-form">
+        <div class="info">
+            <label for="name" id="name-label">Your name: <input type="text" id="name" placeholder="Enter your name"
+                    required></label>
         </div>
-        <div class="full-form group-box">
-            <label for="email"class="text-yellow">Email <input placeholder="Enter your Email" type="email" id="email" required></label>
+        <div class="info">
+            <label for="email" id="email-label">Your Email: <input type="email" id="email"
+                    placeholder="Enter your email" required></label>
         </div>
-        <div class="full-form group-box">
-            <label for="age"class="text-yellow">Age <input placeholder="Age" type="number" id="number" required min="18" max="50"></label>
+        <div class="info">
+            <label for="number" id="number-label">Your age: <input type="number" id="number" placeholder="Age" min="18"
+                    max="55" required> </label>
         </div>
-        <div class="full-form">
-            <label for="dropdown"class="text-yellow">Your platform
+        <div class="info">
+            <label for="dropdown">Choose your platform:
                 <select id="dropdown" required>
-                    <option placeholder="select"></option>
-                    <option value="PC">PC</option>
-                    <option value="PS">PS</option>
-                    <option value="XBOX">XBOX</option>
+                    <option>PC</option>
+                    <option>PS</option>
+                    <option>XBOX</option>
                 </select>
             </label>
         </div>
-        <div class="full-form">
-            <label for="play-time"class="text-yellow">How much u play in day?
-                <input type="radio" class="in-line" id="play-time" value="2-3 hours" name="play-time"> 2-3 hours
-                <input type="radio" class="in-line" id="play-time" value="4-6 hours" name="play-time"> 4-6 hours
-                <input type="radio" class="in-line" id="play-time" value="6+ hours" name="play-time"> 6+ hours
-            </label>
+        <div class="info">
+            <p> How much u can play?</p>
+            <input type="radio" class="inline" id="hours" name="hours" value="2-3 hours" required>
+            <label for="hours">2-3 Hours </label>
+            <input type="radio" class="inline" id="hours" name="hours" value="4+ hours" required>
+            <label for="hours"> 4+ Hours </label>
+            <input type="radio" class="inline" id="hours" name="hours" value="6+ hours" required>
+            <label for="hours"> 6+ Hours </label>
         </div>
-        <div class="full-form">
-            <label for="game" class="text-yellow">Which game u wanna to play?<br>
-                <input type="checkbox" class="in-line" id="games" name="nw">New World
-                <input type="checkbox" class="in-line" id="games" name="wow">World of Warcraft
-                <input type="checkbox" class="in-line" id="games" name="la">Lost Ark
-            </label>
+        <div class="info">
+            <p>Which game u prefer to play?</p>
+            <input type="checkbox" class="inline" id="game" name="nw" value="New world" >
+            <label for="game">New world</label>
+            <input type="checkbox" class="inline" id="game" name="la" value="Lost Ark" >
+            <label for="game">Lost Ark</label>
+            <input type="checkbox" class="inline" id="game" name="wow" value="World of Warcraft">
+            <label for="game">World of Warcraft</label>
         </div>
-        <div class="full-form">
-            <label for="wish" class="text-yellow">Ur wishes:<br>
-                <textarea id="wish" placeholder="Enter your comment here..."></textarea>
-            </label>
+        <div class="info">
+            <p>Tell us about Yourself : </p>
+            <textarea id="tell" placeholder="Tell us about yourself"></textarea>
         </div>
-        <div class="full-form">
-            <label for="submit" >
-                <input id="submit" type="button" value="Submit">
-            </label>
+        <div class="info">
+            <input type="submit" id="submit" value="Submit">
         </div>
     </form>
-    </div>
+
 </body>
 
 </html>
