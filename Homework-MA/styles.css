@@ -1,7 +1,8 @@
-/* Region page start */
+/* #region page start */
 html {
     scroll-behavior: smooth;
 }
+
 body {
     margin: 0;
     font-family: 'Inter', sans-serif;
@@ -9,7 +10,8 @@ body {
     font-size: 16px;
     line-height: 140%;
 }
-/* Region page end */
+
+/* #endregion */
 /* #region header */
 .header {
     display: flex;
@@ -23,7 +25,6 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
 }
-
 .header-top {
     display: flex;
     justify-content: space-between;
@@ -38,12 +39,10 @@ body {
     font-weight: 800;
     letter-spacing: -1.5px;
 }
-
 /* #endregion */
+
 /* #region menu */
 .menu {
-    display: none;
-
     position: fixed;
     top: 0;
     right: 0;
@@ -86,12 +85,14 @@ body {
 }
 
 /* #endregion */
-
+/* #region main */
 .main {
     padding: 120px;
+    background-color: #fff;
 }
+/* #endregion */
 
-/* #recommended start */
+/* #region recommended */
 .recommended {
     margin-bottom: 120px;
 }
@@ -111,6 +112,11 @@ body {
     gap: 24px;
     justify-content: center;
 
+/* #endregion */
+}
+/* #region product */
+.products {
+    flex-basis: 324px;
 }
 
 .product-photo {
@@ -119,6 +125,8 @@ body {
 }
 
 .product-title {
+    font-size: 16px;
+    line-height: 140%;
     margin-top: 0;
     margin-bottom: 8px;
 }
@@ -132,9 +140,16 @@ body {
     margin: 0;
     font-weight: bold;
 }
+
 /* #endregion */
 
-/* categories start */
+/* #region categories */
+.categories {
+    max-width: 1020px;
+    margin: 0 auto;
+    margin-bottom: 120px;
+}
+
 .categories-title {
     margin-top: 0px;
     margin-bottom: 64px;
@@ -146,9 +161,42 @@ body {
 
 }
 
-/* categories end */
-/* how-to-buy-title */
+/* #endregion */
+
+/* #region category  */
+.category {
+    margin-bottom: 64px;
+}
+
+.category-photos {
+    display: flex;
+    gap: 3%;
+    margin-bottom: 16px;
+}
+
+.category-title {
+    margin: 0;
+}
+/* #endregion*/
+/* #region photo */
+.photo-wide {
+    width: 65%;
+}
+
+.photo-square {
+    width: 32%;
+}
+/* #endregion */
+/* #region how to buy */
+.how-to-buy {
+    max-width: 1020px;
+    margin: 0 auto;
+    display: flex;
+    gap: 24px;
+}
+
 .how-to-buy-title {
+    flex-basis: 50%;
     margin-top: 0px;
     margin-bottom: 64px;
     font-size: 48px;
@@ -156,4 +204,29 @@ body {
     font-weight: bold;
     letter-spacing: -1.5px;
 }
-/* how-to-buy-title end */
+.how-to-buy-content {
+    flex-basis: 50%;
+}
+.how-to-buy-list {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 40px;
+    font-weight: bold;
+}
+
+/* #endregion*/
+
+.footer {
+    position: sticky;
+    bottom: 0;
+    z-index: -1;
+    background-image: url(img/footer.png);
+    height: 460px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
